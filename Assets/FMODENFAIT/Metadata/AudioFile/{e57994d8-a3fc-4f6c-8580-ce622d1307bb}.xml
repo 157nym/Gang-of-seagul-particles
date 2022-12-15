@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e57994d8-a3fc-4f6c-8580-ce622d1307bb}">
+		<property name="assetPath">
+			<value>Glass, Break, Bottle, Smash x3 SND37412 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.96790624999999997</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8b9f8c05-24cf-4acf-a2a7-65f476549027}</destination>
+		</relationship>
+	</object>
+</objects>

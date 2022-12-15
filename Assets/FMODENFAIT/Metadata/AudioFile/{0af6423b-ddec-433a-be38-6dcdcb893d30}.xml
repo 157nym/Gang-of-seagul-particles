@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0af6423b-ddec-433a-be38-6dcdcb893d30}">
+		<property name="assetPath">
+			<value>Water, Steam, Iron, Water Sizzle Steam Followed By Steam, Button Press SND26841 3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.4738333333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8b9f8c05-24cf-4acf-a2a7-65f476549027}</destination>
+		</relationship>
+	</object>
+</objects>

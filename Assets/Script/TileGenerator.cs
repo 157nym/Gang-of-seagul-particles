@@ -7,8 +7,9 @@ using UnityEngine;
 public class TileGenerator : MonoBehaviour
 {
     public GameObject[] Tiles;
+    public int TilesToAvoid = 1;
     private int i;
-    private int PreviousIndex;
+    private List<int> PreviousIndex;
     private GameObject PreviousTile;
     private Renderer previousRend;
     
@@ -44,16 +45,20 @@ public class TileGenerator : MonoBehaviour
         pos.z += Tiles[i].GetComponentInChildren<Renderer>().bounds.extents.z;
 
         PreviousTile = Instantiate(Tiles[i], pos, Quaternion.identity, transform);
-        PreviousIndex = i;
+        PreviousIndex.Add(i);
 
         previousRend = PreviousTile.GetComponentInChildren<Renderer>();
         PreviousTile.GetComponent<Tile>().Speed = TerrainSpeed;
         PreviousTile.GetComponent<Tile>().Distance = TerrainDistance;
 
-
+        if (PreviousIndex.Count > TilesToAvoid)
+        {
+            PreviousIndex.RemoveAt(0);
+        }
+        
         if (Tiles.Length > 1)
         {
-            while (i == PreviousIndex)
+            while (!PreviousIndex.Contains(i))
             {
                 i = Random.Range(0, Tiles.Length);
             }
@@ -62,6 +67,7 @@ public class TileGenerator : MonoBehaviour
             i = Random.Range(0, Tiles.Length);
 
         NextRend = Tiles[i].GetComponentInChildren<Renderer>();
+
     }
     
     private void OnDrawGizmos()

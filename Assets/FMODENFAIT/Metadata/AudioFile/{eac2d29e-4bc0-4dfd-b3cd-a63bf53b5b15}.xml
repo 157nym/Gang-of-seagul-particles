@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{eac2d29e-4bc0-4dfd-b3cd-a63bf53b5b15}">
+		<property name="assetPath">
+			<value>Multiball.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.95263038548752832</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8b9f8c05-24cf-4acf-a2a7-65f476549027}</destination>
+		</relationship>
+	</object>
+</objects>
