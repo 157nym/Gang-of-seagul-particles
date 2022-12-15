@@ -34,6 +34,7 @@ public class Pistol : MonoBehaviour
     {
         if (It_Ammo > 0)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/PIOUPIOU");
             var bullet = Instantiate(O_Ammo, Tf_SpawnPoint);
             bullet.GetComponent<Bullet>().S_Pistol = this;
             bullet.tag = "Bullet";
