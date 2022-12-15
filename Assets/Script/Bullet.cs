@@ -33,12 +33,12 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         T = LifeTime;
-        rb.velocity = new Vector3(0,0,Speed);
+        rb.velocity = transform.forward * Speed;
     }
 
     private void Update()
     {
-        rb.velocity = new Vector3(0, 0, Speed);
+        rb.velocity = transform.forward * Speed;
         V_Timer();
     }
 
@@ -63,6 +63,7 @@ public class Bullet : MonoBehaviour
             S_Timer.V_TimerAdd(S_Timer.It_TimeForBigShoot);
             other.gameObject.GetComponentInParent<Ennemy>().V_BeenTouch();
             FMODUnity.RuntimeManager.PlayOneShot("event:/MOR");
+            Destroy(this.gameObject);
         }
         else if(other.tag == ("Body"))
         {
@@ -70,10 +71,11 @@ public class Bullet : MonoBehaviour
             S_Timer.V_TimerAdd(S_Timer.It_TimeForNormalShoot);
             other.gameObject.GetComponentInParent<Ennemy>().V_BeenTouch();
             FMODUnity.RuntimeManager.PlayOneShot("event:/MOR");
+            Destroy(this.gameObject);
         }
         else
         {
-            DestroyImmediate(this.gameObject);
+            Destroy(this.gameObject);
             FMODUnity.RuntimeManager.PlayOneShot("event:/Impact");
         }
 

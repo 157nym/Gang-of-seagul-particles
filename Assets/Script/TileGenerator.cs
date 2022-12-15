@@ -25,7 +25,7 @@ public class TileGenerator : MonoBehaviour
     private void Start()
     {
         i = Random.Range(0, Tiles.Length);
-        SpawnTile(new Vector3(0, 0, TerrainDistance));
+        SpawnTile(new Vector3(0, transform.position.y, TerrainDistance));
     }
 
     private void Update()
@@ -33,7 +33,7 @@ public class TileGenerator : MonoBehaviour
         if (previousRend == null) return;
         
         float d = PreviousTile.transform.position.z + previousRend.bounds.extents.z - (TerrainSpeed * Time.deltaTime);
-        Pos = new Vector3(0, 0, d);
+        Pos = new Vector3(0, transform.position.y, d);
 
         if (d < TerrainDistance)
         {

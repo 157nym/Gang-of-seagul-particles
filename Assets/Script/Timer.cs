@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     public int It_TimeForNormalShoot;
 
     [Header("ScriptToRef")]
-    UI_Manager S_Ui_Manager;
+    [SerializeField] UI_Manager S_Ui_Manager;
 
     [Header("Event")]
     UnityEvent Et_EndofTimer;

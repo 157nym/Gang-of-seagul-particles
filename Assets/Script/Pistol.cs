@@ -18,26 +18,36 @@ public class Pistol : MonoBehaviour
     [HideInInspector]
     public int It_Ammo;
 
-    UnityEvent Et_NoAmmo;
+    UnityEvent Et_NoAmmo = new UnityEvent();
+
+    XRIDefaultInputActions map;
 
 
     private void Awake()
     {
+       It_Ammo = It_AmmoStart;
        if (O_Ammo== null) 
        {
             Debug.LogWarning("Manque le Prefab des ammo");
        }
+       map = new XRIDefaultInputActions();
+       map.Enable();
+
+       map.XRIRightHandInteraction.Shoot.performed += V_Shoot;
 
     }
 
-    public void V_Shoot() // La fucntion qui se lance au shoot 
+    public void V_Shoot(UnityEngine.InputSystem.InputAction.CallbackContext cxt) // La fucntion qui se lance au shoot 
     {
+        Debug.Log($"Je tir avec {It_Ammo}");
         if (It_Ammo > 0)
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/PIOUPIOU");
-            var bullet = Instantiate(O_Ammo, Tf_SpawnPoint);
+            Debug.Log("Shoot");
+            var bullet = Instantiate(O_Ammo, Tf_SpawnPoint.position, Tf_SpawnPoint.rotation );
             bullet.GetComponent<Bullet>().S_Pistol = this;
             bullet.tag = "Bullet";
+            Debug.Break();
             It_Ammo -= 1;
 
         }
