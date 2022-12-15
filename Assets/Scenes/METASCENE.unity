@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1452,10 +1452,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tiles:
-  - {fileID: 5935464979458025694, guid: c43f11ca6c312294fac2d290eb4ca774, type: 3}
-  - {fileID: 4817993042847056794, guid: 75b8fa7562def414696baba2ecb0fb03, type: 3}
-  - {fileID: 2533137470880951772, guid: 140d5cf7b7e21cd4da3bf5148488857b, type: 3}
-  TerrainDistance: 20
+  - {fileID: 8401023907490928349, guid: 40001ab26755bdd43a00f49e7614f373, type: 3}
+  - {fileID: 2749104167224637645, guid: fe90872a9e630cf4cab9f97df5a1dd11, type: 3}
+  - {fileID: 1270440991838984723, guid: e4a77b117e132bd48ab655274152c080, type: 3}
+  - {fileID: 6344149986493848896, guid: 5543b3314d885f943a575e7c40fd1668, type: 3}
+  - {fileID: 4623655212813200954, guid: 8cc7f678a425b724ca515508b65c8213, type: 3}
+  - {fileID: 6569368386960445786, guid: 6e315fb7de61d17408b571015596f03c, type: 3}
+  TilesToAvoid: 1
+  PreviousIndex: 
+  TerrainDistance: 40
   TerrainSpeed: 5
 --- !u!1 &1780440333
 GameObject:
@@ -1561,8 +1566,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2145259652}
   - component: {fileID: 2145259655}
-  - component: {fileID: 2145259654}
   - component: {fileID: 2145259653}
+  - component: {fileID: 2145259656}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1658,14 +1663,6 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   m_HasMigratedActions: 1
---- !u!81 &2145259654
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145259651}
-  m_Enabled: 1
 --- !u!20 &2145259655
 Camera:
   m_ObjectHideFlags: 0
@@ -1709,3 +1706,16 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &2145259656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145259651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}

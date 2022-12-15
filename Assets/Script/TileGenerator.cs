@@ -9,7 +9,7 @@ public class TileGenerator : MonoBehaviour
     public GameObject[] Tiles;
     public int TilesToAvoid = 1;
     private int i;
-    private List<int> PreviousIndex;
+    public List<int> PreviousIndex;
     private GameObject PreviousTile;
     private Renderer previousRend;
     
@@ -30,6 +30,8 @@ public class TileGenerator : MonoBehaviour
 
     private void Update()
     {
+        if (previousRend == null) return;
+        
         float d = PreviousTile.transform.position.z + previousRend.bounds.extents.z - (TerrainSpeed * Time.deltaTime);
         Pos = new Vector3(0, 0, d);
 
@@ -47,9 +49,9 @@ public class TileGenerator : MonoBehaviour
         PreviousTile = Instantiate(Tiles[i], pos, Quaternion.identity, transform);
         PreviousIndex.Add(i);
 
-        previousRend = PreviousTile.GetComponentInChildren<Renderer>();
         PreviousTile.GetComponent<Tile>().Speed = TerrainSpeed;
         PreviousTile.GetComponent<Tile>().Distance = TerrainDistance;
+        previousRend = PreviousTile.GetComponentInChildren<Renderer>();
 
         if (PreviousIndex.Count > TilesToAvoid)
         {
@@ -58,7 +60,7 @@ public class TileGenerator : MonoBehaviour
         
         if (Tiles.Length > 1)
         {
-            while (!PreviousIndex.Contains(i))
+            while (PreviousIndex.Contains(i))
             {
                 i = Random.Range(0, Tiles.Length);
             }
@@ -79,6 +81,9 @@ public class TileGenerator : MonoBehaviour
         
         Gizmos.color = UnityEngine.Color.red;
         Gizmos.DrawWireSphere(Pos, .2f);
+        Gizmos.DrawWireCube(pos, NextRend.bounds.size);
+        Gizmos.color = UnityEngine.Color.green;
+        pos = new Vector3(0, 0, TerrainDistance + NextRend.bounds.extents.z);
         Gizmos.DrawWireCube(pos, NextRend.bounds.size);
     }
 }

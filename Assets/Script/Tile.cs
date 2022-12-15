@@ -8,6 +8,15 @@ public class Tile : MonoBehaviour
     public float Distance;
 
     Vector3 dir = new Vector3(0, 0, -1);
+
+    private void Start()
+    {
+        float i = Random.Range(0, 1);
+        if(i > .5f)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+    }
     
     void Update()
     {
