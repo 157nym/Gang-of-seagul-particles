@@ -24,6 +24,7 @@ public class Ennemy : MonoBehaviour
     public void V_BeenTouch()
     {
         B_Touched = true;
+        Destroy(this.gameObject);
     }
 
     private void Update ()

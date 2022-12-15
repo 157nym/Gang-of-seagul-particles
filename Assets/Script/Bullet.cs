@@ -62,16 +62,18 @@ public class Bullet : MonoBehaviour
             S_Pistol.V_AddAmmo(S_Pistol.It_AmmoForBigShoot);
             S_Timer.V_TimerAdd(S_Timer.It_TimeForBigShoot);
             other.gameObject.GetComponentInParent<Ennemy>().V_BeenTouch();
+            Destroy(this.gameObject);
         }
         else if(other.tag == ("Body"))
         {
             S_Pistol.V_AddAmmo(S_Pistol.It_AmmoForNormalShoot);
             S_Timer.V_TimerAdd(S_Timer.It_TimeForNormalShoot);
             other.gameObject.GetComponentInParent<Ennemy>().V_BeenTouch();
+            Destroy(this.gameObject);
         }
         else
         {
-            DestroyImmediate(this.gameObject);
+            Destroy(this.gameObject);
         }
 
     }

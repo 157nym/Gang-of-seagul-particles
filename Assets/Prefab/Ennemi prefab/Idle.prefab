@@ -491,6 +491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4674680810208750957}
+  - component: {fileID: 848824753056453239}
   m_Layer: 0
   m_Name: Idle
   m_TagString: Untagged
@@ -516,6 +517,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &848824753056453239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5446010566049249239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d4b35ab3b109e4d99a300b424bc422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Go_Head: {fileID: 8873157095026852054}
+  Go_Body: {fileID: 5537483178059282658}
 --- !u!1 &5537483178059282658
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,9 +541,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8407776301153187336}
   - component: {fileID: 3712388447223320344}
+  - component: {fileID: 2636321762666397113}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Body
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -629,6 +645,20 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0035589933, y: -0.29889083, z: 0.2369884}
     m_Extent: {x: 1.2043244, y: 1.4271653, z: 0.6325244}
   m_DirtyAABB: 0
+--- !u!64 &2636321762666397113
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5537483178059282658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5975181585337443901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,9 +1242,10 @@ GameObject:
   m_Component:
   - component: {fileID: 9086868306426474447}
   - component: {fileID: 5463061057868680043}
+  - component: {fileID: 6314366938877099375}
   m_Layer: 0
   m_Name: Cube.018
-  m_TagString: Untagged
+  m_TagString: Head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1290,3 +1321,17 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.057498306, y: 0.5683705, z: -0.0073391795}
     m_Extent: {x: 0.2675119, y: 0.29509014, z: 0.3042087}
   m_DirtyAABB: 0
+--- !u!64 &6314366938877099375
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8873157095026852054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}

@@ -16,16 +16,16 @@ public class UI_Manager : MonoBehaviour
     [HideInInspector]
     public float Ft_Time;
 
-    private void Update()
-    {
-        Txt_Time.text = Ft_Time.ToString();
-        Txt_Score.text = It_Score.ToString();
-    }
+    //private void Update()
+    //{
+    //    Txt_Time.text = Ft_Time.ToString();
+    //    Txt_Score.text = It_Score.ToString();
+    //}
 
-    public void V_EndOfTheGame()
-    {
-        It_Score = It_HighScore;
-    }
+    //public void V_EndOfTheGame()
+    //{
+    //    It_Score = It_HighScore;
+    //}
 
 
 
