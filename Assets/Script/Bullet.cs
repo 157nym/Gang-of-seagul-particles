@@ -33,12 +33,12 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         T = LifeTime;
-        rb.velocity = new Vector3(0,0,Speed);
+        rb.velocity = transform.forward * Speed;
     }
 
     private void Update()
     {
-        rb.velocity = new Vector3(0, 0, Speed);
+        rb.velocity = transform.forward * Speed;
         V_Timer();
     }
 
