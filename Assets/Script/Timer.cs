@@ -15,7 +15,9 @@ public class Timer : MonoBehaviour
 
     [Header("Event")]
     UnityEvent Et_EndofTimer;
-    float Ft_T;
+
+    [HideInInspector]
+    public float Ft_T;
 
 
     private void Start()

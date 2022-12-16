@@ -42,7 +42,7 @@ public class Bullet : MonoBehaviour
         V_Timer();
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.forward,out hit, Speed))
+        if (Physics.Raycast(transform.position, transform.forward,out hit, Speed/2))
         {
             HitScan(hit.collider);
         }

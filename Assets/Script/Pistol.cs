@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class Pistol : MonoBehaviour
 {
@@ -14,9 +16,10 @@ public class Pistol : MonoBehaviour
     [Header("Prefab")]
     [SerializeField] GameObject O_Ammo;
     [SerializeField] Transform Tf_SpawnPoint;
+    [SerializeField] TMP_Text Txt_Ammo;
 
     [HideInInspector]
-    public int It_Ammo;
+    public static int It_Ammo;
 
     UnityEvent Et_NoAmmo = new UnityEvent();
 
@@ -33,8 +36,19 @@ public class Pistol : MonoBehaviour
        map = new XRIDefaultInputActions();
        map.Enable();
 
-       map.XRIRightHandInteraction.Shoot.performed += V_Shoot;
+       if (transform.parent.tag == "Left")
+       {
+            map.XRILeftHandInteraction.Shoot.performed += V_Shoot;
+       }
+       else if (transform.parent.tag == "Right")
+       {
+            map.XRIRightHandInteraction.Shoot.performed += V_Shoot;
+       }
 
+    }
+    private void Update()
+    {
+        Txt_Ammo.text = It_Ammo.ToString();
     }
 
     public void V_Shoot(UnityEngine.InputSystem.InputAction.CallbackContext cxt) // La fucntion qui se lance au shoot 
