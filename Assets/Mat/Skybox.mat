@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2794088619029786603
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Skybox
+  m_Shader: {fileID: 4800000, guid: 7d7415ad389eb2747a3c9c5bb2170cde, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: 71b3a3c1b0211e24c96425a0d7af6d47, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BUILTIN_QueueControl: 0
+    - _BUILTIN_QueueOffset: 0
+    - _CloudsDensity: 0.209
+    - _CloudsDistance: 3.29
+    - _CloudsOpacity: 0.029547213
+    - _CloudsSpeed: 0.02
+    - _Cloudscale: 0.81
+    - _Cloudsheight: 1.71
+    - _Float3: 7.6
+    - _HorizonGlowIntensity: 0.523
+    - _HorizonMinAmountAlways: 1
+    - _HorizonSharpness: 25.42
+    - _HorizonSunGlowSpreadMax: 5.11
+    - _HorizonSunGlowSpreadMin: 4.9
+    - _HorizonTintSunPower: 15.5
+    - _Horizon_Glow: 0
+    - _MoonDiskSharpness: 0.00976
+    - _MoonDiskSize: 0.031
+    - _MoonDiskSizeAdjust: 0.01
+    - _MoonOpacity: 1
+    - _NightTransitionHorizonDelay: 0
+    - _NightTransitionScale: 0
+    - _Night_Time_Offset: 0
+    - _NoisePower: 0
+    - _NoiseSpeed: 0.01
+    - _SkyBox_offset: 0.1
+    - _SkyGradient_Height: 0.79
+    - _SkyGradient_Size: 526.9
+    - _SunDiskSharpness: 0.00999999
+    - _SunDiskSharpness1: 0.00997
+    - _SunDiskSize: 0.013
+    - _SunDiskSize1: 0.013
+    - _SunDiskSizeAdjust: 0.00631
+    - _SunDiskSizeAdjust1: 0.00323
+    - _SunOpacity: 1
+    - _SunOpacity1: 1
+    - __dirty: 1
+    - _gradientSize: 0.72
+    m_Colors:
+    - _CloudsColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Color0: {r: 0, g: 0, b: 0, a: 0}
+    - _Color1: {r: 0, g: 0, b: 0, a: 0}
+    - _Color2: {r: 0.79879856, g: 0, b: 1, a: 0}
+    - _HighSkyColor: {r: 0.78679246, g: 0.948221, b: 1, a: 1}
+    - _High_SkyColor: {r: 0, g: 0.32968134, b: 1, a: 0}
+    - _HorizonColor: {r: 1, g: 0.9351502, b: 0.76886797, a: 0}
+    - _MoonColor: {r: 0.38432088, g: 0.9188116, b: 1, a: 1}
+    - _NightColor: {r: 0.024593143, g: 0.0011569981, b: 0.24528232, a: 1}
+    - _NoiseColor: {r: 0.14542478, g: 0.06274509, b: 0.34901962, a: 0}
+    - _SkyColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SkyColor2: {r: 1, g: 0.74615204, b: 0.49411762, a: 0}
+    - _SunColor: {r: 1, g: 0.78413004, b: 0.42931938, a: 1}
+    - _SunColor1: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []

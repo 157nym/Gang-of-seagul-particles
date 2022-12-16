@@ -15,7 +15,7 @@ public class Spheretrigger : MonoBehaviour
         {
             flag = true;
             StartCoroutine(WaitXSecond());
-            S_Timer.Ft_T -= 2;
+            S_Timer.Ft_T -= 5;
             FMODUnity.RuntimeManager.PlayOneShot("event:/MBOUFH");
         }
     }
