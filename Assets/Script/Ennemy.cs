@@ -23,21 +23,23 @@ public class Ennemy : MonoBehaviour
     }
     public void V_BeenTouch()
     {
-        B_Touched = true;
         Destroy(this.gameObject);
     }
 
     private void Update ()
     {
+        
+    }
+
+    private void FixedUpdate()
+    {
         if (B_Touched != true)
         {
             Mesh colliderMeshForHead = new Mesh();
-            Mesh colliderMeshForBody= new Mesh();
+            Mesh colliderMeshForBody = new Mesh();
             Head_meshRenderer.BakeMesh(colliderMeshForHead);
             Body_meshRenderer.BakeMesh(colliderMeshForBody);
-            Head_collider.sharedMesh = null;
             Head_collider.sharedMesh = colliderMeshForHead;
-            Body_collider.sharedMesh = null;
             Body_collider.sharedMesh = colliderMeshForBody;
         }
     }

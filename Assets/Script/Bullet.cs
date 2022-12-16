@@ -40,6 +40,12 @@ public class Bullet : MonoBehaviour
     {
         rb.velocity = transform.forward * Speed;
         V_Timer();
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.forward,out hit, Speed))
+        {
+            HitScan(hit.collider);
+        }
     }
 
     void V_Timer()
@@ -53,6 +59,11 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        HitScan(other);
+    }
+
+    void HitScan(Collider other)
+    {
         if (other == this || other.tag == "Pistol")
         {
             return;
@@ -65,7 +76,7 @@ public class Bullet : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot("event:/MOR");
             Destroy(this.gameObject);
         }
-        else if(other.tag == ("Body"))
+        else if (other.tag == ("Body"))
         {
             S_Pistol.V_AddAmmo(S_Pistol.It_AmmoForNormalShoot);
             S_Timer.V_TimerAdd(S_Timer.It_TimeForNormalShoot);
@@ -78,7 +89,6 @@ public class Bullet : MonoBehaviour
             Destroy(this.gameObject);
             FMODUnity.RuntimeManager.PlayOneShot("event:/Impact");
         }
-
     }
 
 }
