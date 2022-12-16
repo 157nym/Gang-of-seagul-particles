@@ -39,15 +39,12 @@ public class Pistol : MonoBehaviour
 
     public void V_Shoot(UnityEngine.InputSystem.InputAction.CallbackContext cxt) // La fucntion qui se lance au shoot 
     {
-        Debug.Log($"Je tir avec {It_Ammo}");
         if (It_Ammo > 0)
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/PIOUPIOU");
-            Debug.Log("Shoot");
             var bullet = Instantiate(O_Ammo, Tf_SpawnPoint.position, Tf_SpawnPoint.rotation );
             bullet.GetComponent<Bullet>().S_Pistol = this;
             bullet.tag = "Bullet";
-            Debug.Break();
             It_Ammo -= 1;
 
         }
