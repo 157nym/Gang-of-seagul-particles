@@ -6,13 +6,24 @@ public class Spheretrigger : MonoBehaviour
 {
 
     [SerializeField] Timer S_Timer;
+    bool flag = false;
 
     private void OnTriggerEnter(Collider other)
     {
+        if (flag) return;
         if (other.tag != "Bullet" && other.tag != "Pistol")
         {
-            S_Timer.Ft_T -= 5;
+            flag = true;
+            StartCoroutine(WaitXSecond());
+            S_Timer.Ft_T -= 2;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/MBOUFH");
         }
+    }
+
+    IEnumerator WaitXSecond()
+    {
+        yield return new WaitForSeconds(1);
+        flag = false;
     }
 
 }
