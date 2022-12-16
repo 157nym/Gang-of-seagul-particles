@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5005644807876037260}
   - component: {fileID: 9106162839844404140}
   - component: {fileID: 5556823707491408642}
+  - component: {fileID: 4381099049122006636}
   m_Layer: 0
   m_Name: Mur Dammage.012|Cylinder.003|Dupli|
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4381099049122006636
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425028955425216675}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6168520754877052802, guid: 4a873c4fca0ddde4d9c6c553d15825ce, type: 3}
 --- !u!1 &1414847066984757823
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +109,7 @@ GameObject:
   - component: {fileID: 5874545866183341623}
   - component: {fileID: 7823334653587396817}
   - component: {fileID: 1316670074535158021}
+  - component: {fileID: 8382821381693491465}
   m_Layer: 0
   m_Name: Mur Dammage.013|Cylinder.003|Dupli|
   m_TagString: Untagged
@@ -166,6 +182,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8382821381693491465
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414847066984757823}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6168520754877052802, guid: 4a873c4fca0ddde4d9c6c553d15825ce, type: 3}
 --- !u!1 &1530839531379172685
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +239,7 @@ GameObject:
   - component: {fileID: 1124086455854444021}
   - component: {fileID: 1875662286478338665}
   - component: {fileID: 164613696239398348}
+  - component: {fileID: 6110665007635741038}
   m_Layer: 0
   m_Name: PlaformeDuck.002|Cylinder.004|Dupli|
   m_TagString: Untagged
@@ -281,6 +312,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6110665007635741038
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2685216847987153200}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6507351056410845270, guid: 4a873c4fca0ddde4d9c6c553d15825ce, type: 3}
 --- !u!1 &2784477169916174297
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,6 +402,7 @@ GameObject:
   - component: {fileID: 6766636094429484746}
   - component: {fileID: 7476702295391377221}
   - component: {fileID: 5081934848711389988}
+  - component: {fileID: 1908183432375571696}
   m_Layer: 0
   m_Name: PlaformeDuck.002|Plane.002|Dupli|1
   m_TagString: Untagged
@@ -429,6 +475,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1908183432375571696
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3556246825214931614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7841127579542545293, guid: 4a873c4fca0ddde4d9c6c553d15825ce, type: 3}
 --- !u!1 &3903832005942562440
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +716,7 @@ GameObject:
   - component: {fileID: 314780971467983089}
   - component: {fileID: 4135971198655386462}
   - component: {fileID: 3018736651091173001}
+  - component: {fileID: 3168878762148278662}
   m_Layer: 0
   m_Name: Mur Dammage.015|Cylinder.003|Dupli|
   m_TagString: Untagged
@@ -728,6 +789,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3168878762148278662
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679605102192962359}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6168520754877052802, guid: 4a873c4fca0ddde4d9c6c553d15825ce, type: 3}
 --- !u!1 &6852693154775889313
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,6 +814,7 @@ GameObject:
   - component: {fileID: 2572401113409215326}
   - component: {fileID: 5482181522174867556}
   - component: {fileID: 4942923564558333472}
+  - component: {fileID: 1545405076055021680}
   m_Layer: 0
   m_Name: PlaformeDuck.003|Plane.002|Dupli|1
   m_TagString: Untagged
@@ -811,6 +887,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1545405076055021680
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6852693154775889313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7841127579542545293, guid: 4a873c4fca0ddde4d9c6c553d15825ce, type: 3}
 --- !u!1 &8489227300266142620
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +944,7 @@ GameObject:
   - component: {fileID: 8967364006596524499}
   - component: {fileID: 1447049607006191875}
   - component: {fileID: 6989633484832420921}
+  - component: {fileID: 3830162535523848998}
   m_Layer: 0
   m_Name: Mur Dammage.014|Cylinder.003|Dupli|
   m_TagString: Untagged
@@ -926,6 +1017,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3830162535523848998
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8671480185795282309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6168520754877052802, guid: 4a873c4fca0ddde4d9c6c553d15825ce, type: 3}
 --- !u!1 &9135350410569179103
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +1042,7 @@ GameObject:
   - component: {fileID: 2848362318681279760}
   - component: {fileID: 464927812031817224}
   - component: {fileID: 8013514477735307636}
+  - component: {fileID: 8859050795318849339}
   m_Layer: 0
   m_Name: PlaformeDuck.003|Cylinder.004|Dupli|
   m_TagString: Untagged
@@ -1009,3 +1115,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8859050795318849339
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9135350410569179103}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6507351056410845270, guid: 4a873c4fca0ddde4d9c6c553d15825ce, type: 3}

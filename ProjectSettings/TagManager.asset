@@ -8,6 +8,9 @@ TagManager:
   - Head
   - Body
   - Bullet
+  - Right
+  - Left
+  - Ground
   layers:
   - Default
   - TransparentFX
